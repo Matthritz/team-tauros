@@ -37,6 +37,7 @@ class CreateParty extends React.Component {
 
   render() {
     return (
+      <div className="partyCreation">
       <div className="container">
         <div className="row">
           <div className="col center">
@@ -49,7 +50,6 @@ class CreateParty extends React.Component {
               className="form-control"
               name="name"
               type="text"
-              value={this.state.name}
               placeholder="Name Your Party"
               onChange={this.handleChange}
               />
@@ -62,7 +62,6 @@ class CreateParty extends React.Component {
               className="form-control"
               name="start"
               type="time"
-              value={this.state.start}
               onChange={this.handleChange}
               />
           </label>
@@ -113,6 +112,7 @@ class CreateParty extends React.Component {
         </form>
       </div>
               </div>
+            </div>
             </div>
     );
   }

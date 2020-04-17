@@ -12,3 +12,16 @@ body {
   border: 1px solid #000;
   width: 25%;
 }
+.partyCreation  {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  border-style: outset;
+  size: inherit;
+}
+
+.partiesPage{
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
