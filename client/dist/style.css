@@ -17,11 +17,13 @@ body {
   left: 0px;
   top: 0px;
   border-style: outset;
-  size: inherit;
 }
 
 .partiesPage{
   position: absolute;
   left: 0px;
   top: 0px;
+}
+.form-control {
+  margin-bottom: 10px;
 }

@@ -43,9 +43,8 @@ class CreateParty extends React.Component {
           <div className="col center">
         <form onSubmit={this.handleSubmit}>
           <h3>Party Creation Tools</h3>
-      <div className="form-group">
-          <label>
-            Party
+      <div className="form-group partyInput">
+          <label>Party</label>
             <input
               className="form-control"
               name="name"
@@ -53,44 +52,35 @@ class CreateParty extends React.Component {
               placeholder="Name Your Party"
               onChange={this.handleChange}
               />
-          </label>
-            </div>
-            <div className="form-group">
-          <label>
-            Start Time
+          <label>Party details</label>
+            <textarea
+              className="form-control"
+              name="details"
+              placeholder="Details"
+              onChange={this.handleChange}
+              />
+          <label>Start Time</label>
             <input
               className="form-control"
               name="start"
               type="time"
               onChange={this.handleChange}
               />
-          </label>
-          </div>
-          <div className="form-group">
-          <label>
-            End Time
+          <label>End Time</label>
             <input
               className="form-control"
               type="time"
               name="end"
               onChange={this.handleChange}
               />
-          </label>
-          </div>
-          <div className="form-group">
-          <label>
-            Date
+          <label>Date</label>
             <input
               className="form-control"
               type="date"
               name="date"
               onChange={this.handleChange}
               />
-          </label>
-          </div>
-          <div className="form-group">
-          <label>
-            Radius
+          <label>Radius</label>
             <input
               className="form-control"
               type="number"
@@ -98,16 +88,11 @@ class CreateParty extends React.Component {
               placeholder="Miles"
               onChange={this.handleChange}
               />
-          </label>
-          </div>
-          <div className="form-group">
-          <label>
             <input
               className="form-control btn btn-primary"
               type="submit"
               value="submit"
               />
-          </label>
           </div>
         </form>
       </div>
