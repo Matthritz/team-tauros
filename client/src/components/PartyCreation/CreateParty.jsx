@@ -10,7 +10,7 @@ class CreateParty extends React.Component {
       end: '',
       date: '',
       radius: '',
-      details: 'no details yet',
+      details: '',
       longitude: 1,
       latitude: 1,
       host_id: 1,

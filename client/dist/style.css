@@ -1,6 +1,7 @@
 body {
-  background-color: #FFF;
-  color: #000;
+  background-color: #7C0A02;
+  color: #FFCF99;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 .messages-box {
   border: 1px solid red;
@@ -45,4 +46,8 @@ body {
   border-radius: 3px;
   padding: 3px;
   border-color: lightslategray;
+}
+.btn{
+  color: #EAEAEA;
+  background-color: #262322;
 }
