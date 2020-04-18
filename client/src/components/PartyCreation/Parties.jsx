@@ -38,18 +38,22 @@ class Parties extends React.Component {
     const { parties } = this.state;
     const { getPartyInfo } = this.props;
     return (
-      <div className="container">
+      <div className="container parties-page">
       <div className="row">
         <h1>Parties Page</h1>
         </div>
       <div className="row">
-        <div className="col">
-          <h2>Create Party</h2>
+        <div className="col create">
           <CreateParty getNewPartyEntry={this.getNewPartyEntry} />
         </div>
+<<<<<<< HEAD
         <div className="col">
           <h2>Parties Near You</h2>
           <PartyList parties={parties} getPartyInfo={getPartyInfo} />
+=======
+        <div className="col list">
+          <PartyList parties={parties} getPartyInfo={this.getPartyInfo} />
+>>>>>>> got everything back before the rebase mess-up
         </div>
       </div>
       </div>
