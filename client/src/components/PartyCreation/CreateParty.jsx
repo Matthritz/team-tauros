@@ -49,83 +49,6 @@ class CreateParty extends React.Component {
       <div className="party-creation" >
       <div className="container">
         <div className="row">
-<<<<<<< HEAD
-          <div className="col center">
-            <form onSubmit={this.handleSubmit}>
-              <h3>Party Creation Tools</h3>
-              <div className="form-group">
-                <label>
-                  Party
-                  <input
-                    className="form-control"
-                    name="name"
-                    type="text"
-                    value={this.state.name}
-                    placeholder="Name Your Party"
-                    onChange={this.handleChange}
-                    />
-                </label>
-              </div>
-              <div className="form-group">
-                <label>
-                  Start Time
-                  <input
-                    className="form-control"
-                    name="start"
-                    type="time"
-                    value={this.state.start}
-                    onChange={this.handleChange}
-                    />
-                </label>
-              </div>
-              <div className="form-group">
-                <label>
-                  End Time
-                  <input
-                    className="form-control"
-                    type="time"
-                    name="end"
-                    value={this.state.end}
-                    onChange={this.handleChange}
-                    />
-                </label>
-              </div>
-              <div className="form-group">
-                <label>
-                  Date
-                  <input
-                    className="form-control"
-                    type="date"
-                    name="date"
-                    value={this.state.date}
-                    onChange={this.handleChange}
-                    />
-                </label>
-              </div>
-              <div className="form-group">
-                <label>
-                  Radius
-                  <input
-                    className="form-control"
-                    type="number"
-                    name="radius"
-                    placeholder="Miles"
-                    value={this.state.radius}
-                    onChange={this.handleChange}
-                    />
-                </label>
-              </div>
-              <div className="form-group">
-                <label>
-                  <input
-                    className="form-control btn btn-primary"
-                    type="submit"
-                    value="submit"
-                    />
-                </label>
-              </div>
-            </form>
-=======
           <div className="col">
         <form onSubmit={this.handleSubmit}>
           <h3>Party Creation</h3>
@@ -199,16 +122,12 @@ class CreateParty extends React.Component {
               value="submit"
               />
           </label>
->>>>>>> got everything back before the rebase mess-up
           </div>
-        </div>
+        </form>
       </div>
-<<<<<<< HEAD
-=======
               </div>
             </div>
             </div>
->>>>>>> got everything back before the rebase mess-up
     );
   }
 }

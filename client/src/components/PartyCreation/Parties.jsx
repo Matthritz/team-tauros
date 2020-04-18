@@ -46,15 +46,8 @@ class Parties extends React.Component {
         <div className="col create">
           <CreateParty getNewPartyEntry={this.getNewPartyEntry} />
         </div>
-<<<<<<< HEAD
-        <div className="col">
-          <h2>Parties Near You</h2>
-          <PartyList parties={parties} getPartyInfo={getPartyInfo} />
-=======
         <div className="col list">
-          <h2>Parties Near You</h2>
           <PartyList parties={parties} getPartyInfo={this.getPartyInfo} />
->>>>>>> got everything back before the rebase mess-up
         </div>
       </div>
       </div>
