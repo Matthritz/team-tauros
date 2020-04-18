@@ -4,9 +4,9 @@ import { Link } from 'react-router-dom';
 const PartyListItem = ({ party, getPartyInfo }) => (
 
   // Render individual party details.
-  <div>
+  <div >
     <div className="partyContainer" className="container">
-      <div className="row">
+      <div className="row party-list-item">
         <div className="partyName" className="col">{party.name}</div>
         <div className="partyDistance" className="col">{party.host_location}</div>
         <div className="partySize" className="col">{party.start}</div>

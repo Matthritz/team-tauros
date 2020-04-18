@@ -46,11 +46,12 @@ class CreateParty extends React.Component {
 
   render() {
     return (
+      <div className="party-creation">
       <div className="container">
         <div className="row">
-          <div className="col center">
+          <div className="col">
         <form onSubmit={this.handleSubmit}>
-          <h3>Party Creation Tools</h3>
+          <h3>Party Creation</h3>
       <div className="form-group">
           <label>
             Party
@@ -125,6 +126,7 @@ class CreateParty extends React.Component {
         </form>
       </div>
               </div>
+            </div>
             </div>
     );
   }

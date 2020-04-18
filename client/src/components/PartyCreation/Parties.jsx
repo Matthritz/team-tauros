@@ -38,17 +38,15 @@ class Parties extends React.Component {
     const { parties } = this.state;
 
     return (
-      <div className="container">
+      <div className="container parties-page">
       <div className="row">
         <h1>Parties Page</h1>
         </div>
       <div className="row">
-        <div className="col">
-          <h2>Create Party</h2>
+        <div className="col create">
           <CreateParty getNewPartyEntry={this.getNewPartyEntry} />
         </div>
-        <div className="col">
-          <h2>Parties Near You</h2>
+        <div className="col list">
           <PartyList parties={parties} getPartyInfo={this.getPartyInfo} />
         </div>
       </div>
