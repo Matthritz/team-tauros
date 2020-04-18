@@ -45,19 +45,17 @@ import PartyListItem from './PartyListItem.jsx';
 // }
 
 const PartyList = ({ parties }) => (
-    <div>
-      <h1>Parties near you!</h1>
-      <div className="partyContainer container">
+    <div className="party-list">
+      <h3>Parties near you!</h3>
+      <div className="container">
         <div className="row">
-          <div className="col"><h4>Party Name</h4></div>
-          <div className="col"><h4>Location</h4></div>
-          <div className="col"><h4>Start Time</h4></div>
-          <div className="col"><h4>Party Details</h4></div>
-          <div className="col"><h4>Party Details</h4></div>
-          <div className="col"><h4>Party Details</h4></div>
-          <div className="col"><h4>Link to Join</h4></div>
+          <div className="col"><h5>Party Name</h5></div>
+          <div className="col"><h5>Location</h5></div>
+          <div className="col"><h5>Start Time</h5></div>
+          <div className="col"><h5>Party Details</h5></div>
+          <div className="col"><h5>Link to Join</h5></div>
         </div>
-      </div>
+      </div >
       {parties.map((party) => <PartyListItem key={party.id} party={party} />)}
     </div>
   );

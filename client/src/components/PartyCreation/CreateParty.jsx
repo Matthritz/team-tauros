@@ -37,7 +37,7 @@ class CreateParty extends React.Component {
 
   render() {
     return (
-      <div className="partyCreation">
+      <div className="party-creation">
       <div className="container">
         <div className="row">
           <div className="col center">
