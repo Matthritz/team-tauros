@@ -46,7 +46,7 @@ class CreateParty extends React.Component {
 
   render() {
     return (
-      <div className="party-creation">
+      <div className="party-creation" >
       <div className="container">
         <div className="row">
 <<<<<<< HEAD
@@ -130,8 +130,7 @@ class CreateParty extends React.Component {
         <form onSubmit={this.handleSubmit}>
           <h3>Party Creation</h3>
       <div className="form-group">
-          <label>
-            Party
+          <label>Party</label>
             <input
               className="form-control"
               name="name"
@@ -140,11 +139,19 @@ class CreateParty extends React.Component {
               placeholder="Name Your Party"
               onChange={this.handleChange}
               />
-          </label>
             </div>
             <div className="form-group">
-          <label>
-            Start Time
+            <label>Party details</label>
+            <textarea
+              className="form-control"
+              name="details"
+              placeholder="Details"
+              value={this.state.details}
+              onChange={this.handleChange}
+              />
+              </div>
+              <div className="form-group">
+          <label>Start Time</label>
             <input
               className="form-control"
               name="start"
@@ -152,11 +159,9 @@ class CreateParty extends React.Component {
               value={this.state.start}
               onChange={this.handleChange}
               />
-          </label>
           </div>
           <div className="form-group">
-          <label>
-            End Time
+          <label>End Time</label>
             <input
               className="form-control"
               type="time"
@@ -164,11 +169,9 @@ class CreateParty extends React.Component {
               value={this.state.end}
               onChange={this.handleChange}
               />
-          </label>
           </div>
           <div className="form-group">
-          <label>
-            Date
+          <label>Date</label>
             <input
               className="form-control"
               type="date"
@@ -176,11 +179,9 @@ class CreateParty extends React.Component {
               value={this.state.date}
               onChange={this.handleChange}
               />
-          </label>
           </div>
           <div className="form-group">
-          <label>
-            Radius
+          <label>Radius</label>
             <input
               className="form-control"
               type="number"
@@ -189,7 +190,6 @@ class CreateParty extends React.Component {
               value={this.state.radius}
               onChange={this.handleChange}
               />
-          </label>
           </div>
           <div className="form-group">
           <label>

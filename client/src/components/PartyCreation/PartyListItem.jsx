@@ -4,16 +4,16 @@ import { Link } from 'react-router-dom';
 const PartyListItem = ({ party, getPartyInfo }) => (
 
   // Render individual party details.
-  <div >
-    <div className="partyContainer" className="container">
+  <div>
+    <div className="party-container container border">
       <div className="row party-list-item">
-        <div className="partyName" className="col">{party.name}</div>
-        <div className="partyDistance" className="col">{party.host_location}</div>
-        <div className="partySize" className="col">{party.start}</div>
-        <div className="partyHost" className="col">{party.end}</div>
-        <div className="partyStartTime" className="col">{party.radius}</div>
-        <div className="partyEndTime" className="col">{party.details}</div>
-        <div className="partyLink" className="col">
+        <div className="partyName col">{party.name}</div>
+        {/* <div className="partyLocation col">{party.host_location}</div> */}
+        <div className="partyStart col">{party.start}</div>
+        <div className="partyEnd col">{party.end}</div>
+        {/* <div className="partyRadius col">{party.radius}</div> */}
+        <div className="partyDetails col">{party.details}</div>
+        <div className="partyLink col">
         <Link to={{ pathname: '/chatroom' }}>
           <button
             type="button"
